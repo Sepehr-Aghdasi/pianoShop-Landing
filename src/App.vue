@@ -21,4 +21,13 @@ export default {
       text-align: center;
       color: #2c3e50;
 }
+* {
+      margin: 0;
+      padding: 0;
+      outline: none;
+      text-decoration: none;
+      list-style-type: none;
+      box-sizing: border-box;
+      text-transform: capitalize !important;
+}
 </style>
