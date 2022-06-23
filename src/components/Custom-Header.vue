@@ -1,6 +1,6 @@
 <template>
       <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
-            <div class="container-fluid px-5">
+            <div class="container-fluid px-lg-5 px-1">
                   <a
                         class="navbar-brand pe-4 border border-2 border-bottom-0 border-top-0 border-start-0"
                         style="border-color: #1e1e1e !important"
@@ -20,9 +20,9 @@
                   </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul
-                              class="navbar-nav my-lg-0 my-4 me-auto justify-content-lg-between align-items-start"
+                              class="navbar-nav my-lg-0 my-4 me-auto justify-content-lg-between align-items-start w-50"
                         >
-                              <li class="nav-item mx-lg-5 mx-0">
+                              <li class="nav-item mx-0">
                                     <a
                                           class="nav-link fs-5 mb-0 menu-item-color px-lg-3 px-0 active fw-bold"
                                           aria-current="page"
@@ -30,23 +30,31 @@
                                           >Home</a
                                     >
                               </li>
-                              <li class="nav-item mx-lg-5 mx-0">
-                                    <a class="nav-link fs-5 px-lg-3 px-0 mb-0 menu-item-color" href="#"
+                              <li class="nav-item mx-0">
+                                    <a
+                                          class="nav-link fs-5 px-lg-3 px-0 mb-0 menu-item-color"
+                                          href="#"
                                           >shop</a
                                     >
                               </li>
-                              <li class="nav-item mx-lg-5 mx-0">
-                                    <a class="nav-link fs-5 px-lg-3 px-0 mb-0 menu-item-color" href="#"
+                              <li class="nav-item mx-0">
+                                    <a
+                                          class="nav-link fs-5 px-lg-3 px-0 mb-0 menu-item-color"
+                                          href="#"
                                           >blog</a
                                     >
                               </li>
-                              <li class="nav-item mx-lg-5 mx-0">
-                                    <a class="nav-link fs-5 px-lg-3 px-0 mb-0 menu-item-color" href="#"
+                              <li class="nav-item mx-0">
+                                    <a
+                                          class="nav-link fs-5 px-lg-3 px-0 mb-0 menu-item-color"
+                                          href="#"
                                           >about</a
                                     >
                               </li>
-                              <li class="nav-item mx-lg-5 mx-0">
-                                    <a class="nav-link fs-5 px-lg-3 px-0 mb-0 menu-item-color" href="#"
+                              <li class="nav-item mx-0">
+                                    <a
+                                          class="nav-link fs-5 px-lg-3 px-0 mb-0 menu-item-color"
+                                          href="#"
                                           >contact</a
                                     >
                               </li>
