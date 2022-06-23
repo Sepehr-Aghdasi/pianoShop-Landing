@@ -1,15 +1,18 @@
 <template>
-      <Header/>
+      <Header />
+      <HeaderPicture />
 </template>
 
 <script>
 import Header from "./components/Custom-Header.vue";
+import HeaderPicture from "./components/Header-picture.vue";
 
 export default {
       name: "App",
-      components:{
-            Header
-      }
+      components: {
+            Header,
+            HeaderPicture,
+      },
 };
 </script>
 
