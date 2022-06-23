@@ -1,17 +1,20 @@
 <template>
       <Header />
       <HeaderPicture />
+      <ProductCategory />
 </template>
 
 <script>
 import Header from "./components/Custom-Header.vue";
 import HeaderPicture from "./components/Header-picture.vue";
+import ProductCategory from "./components/categories/Product-category.vue";
 
 export default {
       name: "App",
       components: {
             Header,
             HeaderPicture,
+            ProductCategory,
       },
 };
 </script>
@@ -21,8 +24,6 @@ export default {
       font-family: Avenir, Helvetica, Arial, sans-serif;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      text-align: center;
-      color: #2c3e50;
 }
 * {
       margin: 0;
