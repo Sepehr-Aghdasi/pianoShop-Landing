@@ -6,7 +6,7 @@
 
 <script>
 import Header from "./components/Custom-Header.vue";
-import HeaderPicture from "./components/Header-picture.vue";
+import HeaderPicture from "./components/Header-Picture.vue";
 import ProductCategory from "./components/categories/Product-category.vue";
 
 export default {
