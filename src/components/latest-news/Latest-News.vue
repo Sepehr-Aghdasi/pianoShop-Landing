@@ -1,13 +1,13 @@
 <template>
-  
+      <LatestNewsBox />
 </template>
 
 <script>
-export default {
+import LatestNewsBox from "./Latest-News-Box.vue";
 
-}
+export default {
+      components: { LatestNewsBox },
+};
 </script>
 
-<style>
-
-</style>
+<style></style>
