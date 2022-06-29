@@ -2,12 +2,16 @@
       <Header />
       <HeaderPicture />
       <ProductCategory />
+      <div class="bg-black text-white">
+            <LatestNews />
+      </div>
 </template>
 
 <script>
 import Header from "./components/Custom-Header.vue";
 import HeaderPicture from "./components/Header-Picture.vue";
 import ProductCategory from "./components/categories/Product-category.vue";
+import LatestNews from "./components/latest-news/Latest-News.vue";
 
 export default {
       name: "App",
@@ -15,6 +19,7 @@ export default {
             Header,
             HeaderPicture,
             ProductCategory,
+            LatestNews,
       },
 };
 </script>
