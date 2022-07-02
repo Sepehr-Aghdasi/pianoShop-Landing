@@ -2,7 +2,7 @@
       <Header />
       <HeaderPicture />
       <ProductCategory />
-      <div class="bg-black text-white">
+      <div class="bg-black text-white px-5 py-3">
             <LatestNews />
       </div>
 </template>
