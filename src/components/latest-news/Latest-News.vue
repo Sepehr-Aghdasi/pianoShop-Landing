@@ -21,9 +21,15 @@
                   <hr class="bg-white" />
             </div>
             <div class="row col-12 m-0">
-                  <LatestNewsBox class="col-lg-4 col-md-6 col-12" />
-                  <LatestNewsBox class="col-lg-4 col-md-6 col-12" />
-                  <LatestNewsBox class="col-lg-4 col-md-6 col-12" />
+                  <LatestNewsBox
+                        v-for="(item, index) in newsArray"
+                        :key="index"
+                        :title="item.title"
+                        :description="item.description"
+                        :imageUrl="item.imageUrl"
+                        :url="item.url"
+                        class="col-lg-4 col-md-6 col-12"
+                  />
             </div>
       </div>
 </template>
@@ -41,12 +47,14 @@ export default {
                               title: "event",
                               description:
                                     "World International Piano Competition 2022 Starts This Month",
+                              imageUrl: "Rectangle-13.png",
                               url: "#",
                         },
                         {
                               id: 1,
                               title: "event",
                               description: "Butterfly Pianos and Symmetrical Grands",
+                              imageUrl: "Rectangle-14.png",
                               url: "#",
                         },
                         {
@@ -54,6 +62,7 @@ export default {
                               title: "event",
                               description:
                                     "The Appassionata — Steinway Celebrates Beethoven’s 250th Birthday",
+                              imageUrl: "Rectangle-15.png",
                               url: "#",
                         },
                   ],
