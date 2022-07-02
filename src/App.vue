@@ -4,7 +4,7 @@
       <div class="m-5">
             <ProductCategory />
       </div>
-      <div class="bg-black text-white px-5 py-3">
+      <div class="bg-black text-white p-5">
             <LatestNews />
       </div>
 </template>
@@ -40,5 +40,9 @@ export default {
       list-style-type: none;
       box-sizing: border-box;
       text-transform: capitalize !important;
+}
+a {
+      color: inherit !important;
+      text-decoration: none !important;
 }
 </style>
