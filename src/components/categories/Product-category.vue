@@ -4,7 +4,7 @@
             <h3 class="text-center m-0">Categories</h3>
             <span class="custom-line mx-lg-5 mx-1"></span>
       </div>
-      <div class="row justify-content-evenly m-5">
+      <div class="row justify-content-evenly">
             <ProductCategoryBox
                   v-for="item in categoryArray"
                   :key="item.id"
@@ -13,6 +13,16 @@
                   :categoryAddress="item.address"
                   class="col-lg-3 col-md-6 col-12 m-3"
             />
+      </div>
+      <div class="seeAll-button d-flex justify-content-center">
+            <span class="custom-line"></span>
+            <button
+                  class="btn border border-dark px-5"
+                  style="border-radius: 0 !important; white-space: nowrap"
+            >
+                  see all
+            </button>
+            <span class="custom-line"></span>
       </div>
 </template>
 
@@ -86,6 +96,16 @@ export default {
             display: flex;
             width: 15%;
             margin-bottom: 23px;
+      }
+}
+.seeAll-button {
+      .custom-line {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+            display: flex;
+            width: 40%;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 17px;
       }
 }
 </style>
