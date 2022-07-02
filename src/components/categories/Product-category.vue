@@ -17,10 +17,11 @@
       <div class="seeAll-button d-flex justify-content-center">
             <span class="custom-line"></span>
             <button
-                  class="btn border border-dark px-5"
+                  class="btn border border-dark px-4"
                   style="border-radius: 0 !important; white-space: nowrap"
             >
                   see all
+                  <img src="../../assets/svg/Right-ARROW-black.svg" class="ps-2" alt="" />
             </button>
             <span class="custom-line"></span>
       </div>
