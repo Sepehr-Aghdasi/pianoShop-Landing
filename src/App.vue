@@ -1,7 +1,9 @@
 <template>
       <Header />
       <HeaderPicture />
-      <ProductCategory />
+      <div class="m-5">
+            <ProductCategory />
+      </div>
       <div class="bg-black text-white px-5 py-3">
             <LatestNews />
       </div>
