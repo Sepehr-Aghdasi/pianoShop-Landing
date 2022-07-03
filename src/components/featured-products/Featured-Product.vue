@@ -5,17 +5,14 @@
             <span class="custom-line mx-lg-5 mx-1"></span>
       </div>
       <div class="row">
-            <div class="col-3">
-                  <FeaturedProductBox />
-            </div>
-            <div class="col-3">
-                  <FeaturedProductBox />
-            </div>
-            <div class="col-3">
-                  <FeaturedProductBox />
-            </div>
-            <div class="col-3">
-                  <FeaturedProductBox />
+            <div v-for="(item, index) in FeaturedProductArray" :key="index" class="col-3">
+                  <FeaturedProductBox
+                        :imageUrl="item.imageUrl"
+                        :title="item.title"
+                        :description="item.description"
+                        :price="item.price"
+                        :url="item.url"
+                  />
             </div>
       </div>
 </template>
