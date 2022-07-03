@@ -1,18 +1,20 @@
 <template>
-      <div class="d-flex">
-            <span class="custom-line mx-lg-5 mx-1"></span>
-            <h2 class="h2" style="white-space: nowrap">featured products</h2>
-            <span class="custom-line mx-lg-5 mx-1"></span>
-      </div>
-      <div class="row">
-            <div v-for="(item, index) in FeaturedProductArray" :key="index" class="col-3">
-                  <FeaturedProductBox
-                        :imageUrl="item.imageUrl"
-                        :title="item.title"
-                        :description="item.description"
-                        :price="item.price"
-                        :url="item.url"
-                  />
+      <div class="featured-products">
+            <div class="d-flex">
+                  <span class="custom-line mx-lg-5 mx-1"></span>
+                  <h2 class="h2" style="white-space: nowrap">featured products</h2>
+                  <span class="custom-line mx-lg-5 mx-1"></span>
+            </div>
+            <div class="row">
+                  <div v-for="(item, index) in FeaturedProductArray" :key="index" class="col-3">
+                        <FeaturedProductBox
+                              :imageUrl="item.imageUrl"
+                              :title="item.title"
+                              :description="item.description"
+                              :price="item.price"
+                              :url="item.url"
+                        />
+                  </div>
             </div>
       </div>
 </template>
@@ -79,11 +81,13 @@ export default {
 };
 </script>
 
-<style>
-.custom-line {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.8);
-      display: flex;
-      width: 40%;
-      margin-bottom: 25px;
+<style lang="scss">
+.featured-products {
+      .custom-line {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+            display: flex;
+            width: 40%;
+            margin-bottom: 25px;
+      }
 }
 </style>
