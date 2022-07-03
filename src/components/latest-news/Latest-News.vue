@@ -1,5 +1,5 @@
 <template>
-      <div class="p-3">
+      <div class="latestNews p-3">
             <div class="mx-3 mb-5">
                   <div class="d-flex justify-content-between align-items-center col-12">
                         <div class="d-flex align-items-center col-6">
@@ -71,10 +71,12 @@ export default {
 };
 </script>
 
-<style>
-.custom-line {
-      border-bottom: 1px solid #fff;
-      display: flex;
-      width: 8%;
+<style lang="scss" scoped>
+.latestNews {
+      .custom-line {
+            border-bottom: 1px solid #fff;
+            display: flex;
+            width: 15%;
+      }
 }
 </style>
