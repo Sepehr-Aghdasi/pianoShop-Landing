@@ -7,7 +7,7 @@
       <div class="bg-black text-white p-5">
             <LatestNews />
       </div>
-      <div>
+      <div class="m-5">
             <FeaturedProduct />
       </div>
 </template>
