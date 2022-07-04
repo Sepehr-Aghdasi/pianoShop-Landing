@@ -15,7 +15,7 @@
                   </div>
                   <div class="col-lg-6 col-12">
                         <div
-                              class="d-flex flex-column justify-content-evenly align-items-center px-5 h-100 mt-lg-0 mt-3"
+                              class="d-flex flex-column justify-content-evenly align-items-center px-lg-5 px-2 h-100 mt-lg-0 mt-3"
                         >
                               <h3 class="h1">Piano Tuning</h3>
                               <p class="text-center text-lowercase">
