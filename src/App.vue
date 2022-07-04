@@ -10,6 +10,9 @@
       <div class="m-5">
             <FeaturedProduct />
       </div>
+      <div class="m-5">
+            <OurServices />
+      </div>
 </template>
 
 <script>
@@ -18,6 +21,7 @@ import HeaderPicture from "./components/Header-Picture.vue";
 import ProductCategory from "./components/categories/Product-category.vue";
 import LatestNews from "./components/latest-news/Latest-News.vue";
 import FeaturedProduct from "./components/featured-products/Featured-Product.vue";
+import OurServices from "./components/our-services/our-services.vue";
 
 export default {
       name: "App",
@@ -27,6 +31,7 @@ export default {
             ProductCategory,
             LatestNews,
             FeaturedProduct,
+            OurServices,
       },
 };
 </script>
