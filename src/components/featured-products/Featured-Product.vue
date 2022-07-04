@@ -1,8 +1,8 @@
 <template>
       <div class="featured-products">
-            <div class="d-flex">
+            <div class="d-flex mb-5">
                   <span class="custom-line mx-lg-5 mx-1"></span>
-                  <h2 class="h2" style="white-space: nowrap">featured products</h2>
+                  <h2 class="h1 fw-bold" style="white-space: nowrap">featured products</h2>
                   <span class="custom-line mx-lg-5 mx-1"></span>
             </div>
             <div class="row">
@@ -33,7 +33,6 @@
                               :url="featuredProductArray[1].url"
                         />
                   </div>
-                  <!-- Shit Code :| -->
                   <div
                         v-for="(item, index) in featuredProductArray.slice(2)"
                         :key="index"
@@ -46,6 +45,21 @@
                               :price="item.price"
                               :url="item.url"
                         />
+                  </div>
+                  <div class="seeAll-button d-flex justify-content-center mt-5">
+                        <span class="custom-line"></span>
+                        <button
+                              class="btn border border-dark px-4"
+                              style="border-radius: 0 !important; white-space: nowrap"
+                        >
+                              see all
+                              <img
+                                    src="../../assets/svg/Right-ARROW-black.svg"
+                                    class="ps-2"
+                                    alt=""
+                              />
+                        </button>
+                        <span class="custom-line"></span>
                   </div>
             </div>
       </div>
@@ -128,6 +142,14 @@ export default {
             display: flex;
             width: 40%;
             margin-bottom: 25px;
+      }
+      .seeAll-button {
+            .custom-line {
+                  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+                  display: flex;
+                  width: 100%;
+                  margin-bottom: 17px;
+            }
       }
 }
 </style>
