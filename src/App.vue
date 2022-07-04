@@ -17,7 +17,7 @@
 
 <script>
 import Header from "./components/Custom-Header.vue";
-import HeaderPicture from "./components/Header-Picture.vue";
+import HeaderPicture from "./components/Header-Slider.vue";
 import ProductCategory from "./components/categories/Product-category.vue";
 import LatestNews from "./components/latest-news/Latest-News.vue";
 import FeaturedProduct from "./components/featured-products/Featured-Product.vue";
