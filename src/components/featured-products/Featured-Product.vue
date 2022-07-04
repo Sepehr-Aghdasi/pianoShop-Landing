@@ -6,14 +6,17 @@
                   <span class="custom-line mx-lg-5 mx-1"></span>
             </div>
             <div class="row">
-                  <div v-for="(item, index) in FeaturedProductArray" :key="index" class="col-3 mb-4">
+                  <div class="col-3 mb-4">
                         <FeaturedProductBox
-                              :imageUrl="item.imageUrl"
-                              :title="item.title"
-                              :description="item.description"
-                              :price="item.price"
-                              :url="item.url"
+                              :imageUrl="FeaturedProductArray[0].imageUrl"
+                              :title="FeaturedProductArray[0].title"
+                              :description="FeaturedProductArray[0].description"
+                              :price="FeaturedProductArray[0].price"
+                              :url="FeaturedProductArray[0].url"
                         />
+                  </div>
+                  <div class="col-6 mb-4">
+                        <ImageBox />
                   </div>
             </div>
       </div>
@@ -21,9 +24,10 @@
 
 <script>
 import FeaturedProductBox from "./Featured-Product-Box.vue";
+import ImageBox from "./Image-Box.vue";
 
 export default {
-      components: { FeaturedProductBox },
+      components: { FeaturedProductBox, ImageBox },
       data() {
             return {
                   FeaturedProductArray: [
