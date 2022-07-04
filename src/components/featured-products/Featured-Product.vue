@@ -6,7 +6,7 @@
                   <span class="custom-line mx-lg-5 mx-1"></span>
             </div>
             <div class="row">
-                  <div v-for="(item, index) in FeaturedProductArray" :key="index" class="col-3">
+                  <div v-for="(item, index) in FeaturedProductArray" :key="index" class="col-3 mb-4">
                         <FeaturedProductBox
                               :imageUrl="item.imageUrl"
                               :title="item.title"
