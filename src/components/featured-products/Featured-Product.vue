@@ -6,17 +6,46 @@
                   <span class="custom-line mx-lg-5 mx-1"></span>
             </div>
             <div class="row">
-                  <div class="col-3 mb-4">
+                  <div class="col-lg-3 col-md-6 col-12 mb-4">
                         <FeaturedProductBox
-                              :imageUrl="FeaturedProductArray[0].imageUrl"
-                              :title="FeaturedProductArray[0].title"
-                              :description="FeaturedProductArray[0].description"
-                              :price="FeaturedProductArray[0].price"
-                              :url="FeaturedProductArray[0].url"
+                              :imageUrl="featuredProductArray[0].imageUrl"
+                              :title="featuredProductArray[0].title"
+                              :description="featuredProductArray[0].description"
+                              :price="featuredProductArray[0].price"
+                              :url="featuredProductArray[0].url"
                         />
                   </div>
-                  <div class="col-6 mb-4">
-                        <ImageBox />
+                  <div class="col-lg-6 col-12 mb-4">
+                        <ImageBox
+                              :imageUrl="imageBoxProperty.imageUrl"
+                              :title="imageBoxProperty.title"
+                              :description="imageBoxProperty.description"
+                              :price="imageBoxProperty.price"
+                              :url="imageBoxProperty.url"
+                        />
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-12 mb-4">
+                        <FeaturedProductBox
+                              :imageUrl="featuredProductArray[1].imageUrl"
+                              :title="featuredProductArray[1].title"
+                              :description="featuredProductArray[1].description"
+                              :price="featuredProductArray[1].price"
+                              :url="featuredProductArray[1].url"
+                        />
+                  </div>
+                  <!-- Shit Code :| -->
+                  <div
+                        v-for="(item, index) in featuredProductArray.slice(2)"
+                        :key="index"
+                        class="col-lg-3 col-md-6 col-12 mb-4"
+                  >
+                        <FeaturedProductBox
+                              :imageUrl="item.imageUrl"
+                              :title="item.title"
+                              :description="item.description"
+                              :price="item.price"
+                              :url="item.url"
+                        />
                   </div>
             </div>
       </div>
@@ -30,7 +59,14 @@ export default {
       components: { FeaturedProductBox, ImageBox },
       data() {
             return {
-                  FeaturedProductArray: [
+                  imageBoxProperty: {
+                        imageUrl: "Rectangle-18.png",
+                        title: "STEINWAY & SONS",
+                        description: "UPRIGHT PIANO MODEL K – C2003",
+                        price: "£36,995",
+                        url: "#",
+                  },
+                  featuredProductArray: [
                         {
                               id: 0,
                               imageUrl: "Yamaha.png",
