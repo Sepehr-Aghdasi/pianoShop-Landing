@@ -1,12 +1,20 @@
 <template>
       <div class="custom-footer">
             <div class="card bg-dark text-white">
-                  <img src="../../assets/images/Piano-Style-Footer.png" class="card-img" alt="" />
+                  <img
+                        src="../../assets/images/Piano-Style-Footer.png"
+                        class="card-img h-100"
+                        alt=""
+                  />
                   <div
                         class="card-img-overlay d-flex flex-column justify-content-around align-items-center"
                   >
-                        <h5 class="h2 text-white card-title text-center mb-lg-3 mb-0">ANTIQUE PIANO</h5>
-                        <p class="card-text text-white h1 mb-lg-3 mb-0">We Deliver You The Best Notes.</p>
+                        <h5 class="h2 text-white card-title text-center mb-lg-3 mb-0">
+                              ANTIQUE PIANO
+                        </h5>
+                        <p class="card-text text-white h1 mb-lg-3 mb-0">
+                              We Deliver You The Best Notes.
+                        </p>
                         <div class="col-12">
                               <div class="footer-links nav justify-content-center">
                                     <li class="nav-item d-flex">
@@ -65,6 +73,9 @@ export default {};
                   background-color: #fff !important;
                   opacity: 1 !important;
             }
+      }
+      .card-img-overlay {
+            padding: 0 !important;
       }
       //       .card-img-overlay {
       //             background: black;
